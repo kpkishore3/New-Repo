@@ -1,0 +1,158 @@
+{
+	"header": {
+		"messageIdentification": "100000021",
+		"channel": "MOBILE",
+		"initiatingParty": {
+			"name": "ZAND"
+		}
+	},
+	"paymentInformation": {
+		"requestExecutionDate": "2024-05-16",
+		"purposeCode": "ACCTVERIFY",
+		"paymentNetwork": "FedACH",
+		"localInstrument": "PPD",
+		"debtor": {
+			"name": "John",
+			"account": {
+				"accNumber": "12345678921"
+			},
+			"address": {
+				"streetName": "Park Avenue",
+				"postCode": "96522",
+				"countrySubDivision": "US",
+				"city": "NEW YORK",
+				"country": "US"
+			}
+		},
+		"debtorAgent": {
+			"name": "ZAND",
+			"identification": {
+				"clearingSysMemberId": "011053800"
+			},
+			"branch": {
+				"address": {
+					"country": "US"
+				}
+			},
+			"additionalInfo": {
+				"orginatingDfiIdentificationNumberQualifier": "01"
+			}
+		},
+		"instructingAgent": {
+			"name": "ZAND",
+			"identification": {
+				"clearingSysMemberId": "ATBLZ12345"
+			}
+		},
+		"creditTxnInformation": {
+			"txnRef": "txn1000030001",
+			"endToEndId": "426614174000",
+			"amount": {
+				"instructedAmount": 0,
+				"interBankSettlementAmount": 100.01,
+				"instructedCur": "USD",
+				"beneficiaryCur": "USD"
+			},
+			"creditor": {
+				"name": "Anoop",
+				"identification": {
+					"others": {
+						"organizationIdentification": [
+							{
+								"id": "34457895654"
+							}
+						]
+					}
+				},
+				"account": {
+					"accNumber": "12345678921"
+				},
+				"address": {
+					"streetName": "Park Avenue",
+					"postCode": "96522",
+					"countrySubDivision": "US",
+					"city": "NEW YORK",
+					"country": "US"
+				}
+			},
+			"creditorAgent": {
+				"name": "HSBC",
+				"identification": {
+					"clearingSysMemberId": "011053800"
+				},
+				"address": {
+					"country": "US"
+				},
+				"branch": {
+					"address": {
+						"country": "US"
+					}
+				},
+				"additionalInfo": {
+					"receivingDfiIdentificationNumberQualifier": "01"
+				}
+			},
+			"paymentParties": [
+				{
+					"name": "John",
+					"type": "ULTIMATE_DEBTOR",
+					"identification": {
+						"others": {
+							"organizationIdentification": [
+								{
+									"id": "34457895654"
+								}
+							],
+							"privateIdentification": [
+								{
+									"id": "LA 497327"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		"paymentPartyAgents": [
+			{
+				"name": "ZAND",
+				"type": "SENDER_CORRESPONDENT",
+				"identification": {
+					"clearingSysMemberId": "011053800"
+				},
+				"branch": {
+					"address": {
+						"country": "US"
+					}
+				},
+				"additionalInfo": {
+					"ForeignCorrespondentBankIdentificationNumberQualifier": "01",
+					"additionalProp2": "string",
+					"additionalProp3": "string"
+				}
+			}
+		],
+		"remittanceInformation": {
+			"unstructured": [
+				{
+					"info": "DELIVERY RECEIPTS SIGNED BY DEBITOR"
+				}
+			]
+		},
+		"additionalInfo": {
+			"referenceCode": "REF11",
+			"messageAuthenticationCode": "CD1234",
+			"transactionCode": "22",
+			"iatIndicator": "IATCOR",
+			"foreignExchangeIndicator": "FV",
+			"foreignExchangeReferenceIndicator": "1",
+			"foreignExchangeReference": "",
+			"originatorIdentification": "ORGID",
+			"gatewayOperatorOfacScreeningIndicator": "0",
+			"secondaryOfacScreeningIndicator": "0",
+			"transactionTypeCode": "SHR",
+			"foreignTraceNumber": "55"
+		},
+		"paymentInformationIdentification": "PMTINF202411140001"
+	}
+}

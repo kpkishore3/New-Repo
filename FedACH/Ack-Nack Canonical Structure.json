@@ -1,0 +1,64 @@
+{
+	"header": {
+		"partitionDate": "2025-01-01T00:00:00Z",
+		"msgType": "admi.007",
+		"createdMsgType": "admi.007",
+		"direction": "INCOMING",
+		"paymentNetwork": "Fedwire",
+		"originalPaymentInstructionId": "a665d4db-81cd-492e-b4a2-749cf4132ba0",
+		"messageIdentification": "2025011070027b0c6d9001",
+		"createdMessageIdentification": "2025011070027b0c6d9001",
+		"creationDateTime": "2025-05-26T14:30:00.000Z",
+		"additionalInfo": {
+			"key1": "value1",
+			"key2": "value2"
+		}
+	},
+	"messageRejectInformation": {
+		"reason": {
+			"rejectingPartyReason": "E301",
+			"rejectionDateTime": "2024-09-26T14:30:00.000Z",
+			"errorLocation": "error",
+			"reasonDescription": "Invalid Transaction",
+			"additionalInfo": {
+				"key1": "value1",
+				"key2": "value2"
+			}
+		}
+	},
+	"receiptAckInformation": {
+		"requestHandling": {
+					"statusCode": "S001",
+					"statusDateTime": "2025-05-28T14:30:00.000Z",
+					"description": "success"
+				},
+		"additionalInfo": {
+			"key1": "value1",
+			"key2": "value2"
+		}
+	},
+	"messageDetails": {
+		"msgString": "c2FtcGxlIG1lc3NhZ2U=",
+		"contentType": "text/plain"
+	},
+	"originalMessageInformation": {
+		"header": {
+			"additionalInfo": {
+				"additionalProp1": "string",
+				"additionalProp2": "string",
+				"additionalProp3": "string"
+			},
+			"authorisation": "AUTH",
+			"branchId": 15,
+			"channel": "NETWORK",
+			"creationDateTime": "2022-02-02T09:45:00Z",
+			"departmentId": 10,
+			"direction": "INCOMING",
+			"messageIdentification": "100000021",
+			"msgType": "pacs.008",
+			"numberOfTransactions": "1",
+			"partitionDate": "2025-01-01T00:00:00Z",
+			"transactionType": "CCT"
+		}
+	}
+}

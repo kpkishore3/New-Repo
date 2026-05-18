@@ -1,0 +1,87 @@
+{
+	"header": {
+		"messageIdentification": "100000021",
+		"channel": "MOBILE",
+		"initiatingParty": {
+			"name": "ZAND"
+		}
+	},
+	"paymentInformation": {
+		"requestExecutionDate": "2024-05-16",
+		"purposeCode": "ACCTVERIFY",
+		"paymentNetwork": "FedACH",
+		"localInstrument": "PPD",
+		"debtor": {
+			"account": {
+				"accNumber": "12345678921"
+			}
+		},
+		"debtorAgent": {
+			"identification": {
+				"clearingSysMemberId": "011053800"
+			}
+		},
+		"instructingAgent": {
+			"name": "ZAND",
+			"identification": {
+				"clearingSysMemberId": "ATBLZ12345"
+			}
+		},
+		"creditTxnInformation": {
+			"txnRef": "txn1000030001",
+			"endToEndId": "426614174000",
+			"amount": {
+				"interBankSettlementAmount": 100.01
+			},
+			"creditor": {
+				"name": "Anoop",
+				"identification": {
+					"others": {
+						"privateIdentification": [
+							{
+								"id": "89957895654"
+							}
+						]
+					}
+				},
+				"account": {
+					"accNumber": "12345678921"
+				}
+			},
+			"creditorAgent": {
+				"identification": {
+					"clearingSysMemberId": "011053800"
+				}
+			},
+			"paymentParties": [
+				{
+					"name": "John",
+					"type": "ULTIMATE_DEBTOR",
+					"identification": {
+						"others": {
+							"organizationIdentification": [
+								{
+									"id": "34457895654"
+								}
+							],
+							"privateIdentification": [
+								{
+									"id": "LA 497327"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		"additionalInfo": {
+			"referenceCode": "REF11",
+			"companyDiscretionaryData": "CMPNY",
+			"companyDescriptiveDate": "7 July",
+			"messageAuthenticationCode": "CD1234",
+			"transactionCode": "22",
+			"paymentTypeCode": "R"
+		},
+		"paymentInformationIdentification": "PMTINF202411140001"
+	}
+}
